@@ -13,9 +13,7 @@ public class Fibonacci {
             int nextTerm = firstTerm + secondTerm;
             firstTerm = secondTerm;
             secondTerm = nextTerm;
-
             i++;
         }
-
     }
 }

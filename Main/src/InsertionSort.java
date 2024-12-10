@@ -16,7 +16,6 @@ public class InsertionSort {
                 --j;
             }
             array[j+1] = key;
-
         }
     }
 

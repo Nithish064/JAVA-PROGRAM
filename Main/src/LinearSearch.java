@@ -13,7 +13,6 @@ public class LinearSearch {
             System.out.println("Element found at the index of " + ans);
         }
     }
-
     static int linearsearch(int[] arr, int target)
     {
         if(arr.length == 0)
