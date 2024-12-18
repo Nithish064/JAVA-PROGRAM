@@ -8,7 +8,7 @@ public class Fibonacci {
         int i = 1, firstTerm = 0, secondTerm = 1;
 
         while (i <= n) {
-            System.out.print(firstTerm + " , ");
+            System.out.print(firstTerm + " ");
 
             int nextTerm = firstTerm + secondTerm;
             firstTerm = secondTerm;
