@@ -1,87 +1,83 @@
 package Sorting;
+
+import java.util.Arrays;
+
 // Merge sort in Java
-
 public class MergeSort {
+  public static void main(String[] args) {
+      int[] array = {64, 25, 12, 22, 11}; // Example array
+      System.out.println("Original array:");
+      System.out.println(Arrays.toString(array));
 
-    // Merge two subarrays L and M into arr
-    void merge(int arr[], int p, int q, int r) {
-  
-      int n1 = q - p + 1;
-      int n2 = r - q;
-  
-      int L[] = new int[n1];
-      int M[] = new int[n2];
-  
-      for (int i = 0; i < n1; i++)
-        L[i] = arr[p + i];
-      for (int j = 0; j < n2; j++)
-        M[j] = arr[q + 1 + j];
-  
-      // Maintain current index of sub-arrays and main array
-      int i, j, k;
-      i = 0;
-      j = 0;
-      k = p;
-  
-      // Until we reach either end of either L or M, pick larger among
-      // elements L and M and place them in the correct position at A[p..r]
-      while (i < n1 && j < n2) {
-        if (L[i] <= M[j]) {
-          arr[k] = L[i];
-          i++;
-        } else {
-          arr[k] = M[j];
-          j++;
-        }
-        k++;
-      }
-  
-      // When we run out of elements in either L or M,
-      // pick up the remaining elements and put in A[p..r]
-      while (i < n1) {
-        arr[k] = L[i];
-        i++;
-        k++;
-      }
-  
-      while (j < n2) {
-        arr[k] = M[j];
-        j++;
-        k++;
-      }
-    }
-  
-    // Divide the array into two subarrays, sort them and merge them
-    void mergeSort(int arr[], int l, int r) {
-      if (l < r) {
-  
-        // m is the point where the array is divided into two subarrays
-        int m = (l + r) / 2;
-  
-        mergeSort(arr, l, m);
-        mergeSort(arr, m + 1, r);
-  
-        // Merge the sorted subarrays
-        merge(arr, l, m, r);
-      }
-    }
-  
-    // Print the array
-    static void printArray(int arr[]) {
-      int n = arr.length;
-      for (int i = 0; i < n; ++i)
-        System.out.print(arr[i] + " ");
-      System.out.println();
-    }
-  
-    // Driver program
-    public static void main(String args[]) {
-      int arr[] = { 6, 5, 12, 10, 9, 1 };
-  
-      MergeSort ob = new MergeSort();
-      ob.mergeSort(arr, 0, arr.length - 1);
-  
+      mergeSort(array, 0, array.length - 1); // Perform merge sort
+
       System.out.println("Sorted array:");
-      printArray(arr);
-    }
+      System.out.println(Arrays.toString(array));
   }
+
+  // Method to perform merge sort
+  public static void mergeSort(int[] array, int left, int right) {
+      if (left < right) {
+          // Find the middle point
+          int mid = (left + right) / 2;
+
+          // Recursively sort the first and second halves
+          mergeSort(array, left, mid);
+          mergeSort(array, mid + 1, right);
+
+          // Merge the sorted halves
+          merge(array, left, mid, right);
+      }
+  }
+
+  // Method to merge two halves
+  public static void merge(int[] array, int left, int mid, int right) {
+      // Find sizes of two subarrays to be merged
+      int n1 = mid - left + 1;
+      int n2 = right - mid;
+
+      // Create temporary arrays
+      int[] leftArray = new int[n1];
+      int[] rightArray = new int[n2];
+
+      // Copy data to temporary arrays
+      for (int i = 0; i < n1; i++) {
+          leftArray[i] = array[left + i];
+      }
+      for (int j = 0; j < n2; j++) {
+          rightArray[j] = array[mid + 1 + j];
+      }
+
+      // Merge the temporary arrays
+
+      // Initial indexes of first and second subarrays
+      int i = 0, j = 0;
+
+      // Initial index of merged subarray
+      int k = left;
+      while (i < n1 && j < n2) {
+          if (leftArray[i] <= rightArray[j]) {
+              array[k] = leftArray[i];
+              i++;
+          } else {
+              array[k] = rightArray[j];
+              j++;
+          }
+          k++;
+      }
+
+      // Copy remaining elements of leftArray if any
+      while (i < n1) {
+          array[k] = leftArray[i];
+          i++;
+          k++;
+      }
+
+      // Copy remaining elements of rightArray if any
+      while (j < n2) {
+          array[k] = rightArray[j];
+          j++;
+          k++;
+      }
+  }
+}
