@@ -35,7 +35,7 @@ public class PrintDuplicates {
 
                 // If count is greater than 1, it's a duplicate
                 if (count > 1) {
-                    System.out.println(current + ": " + count + " times");
+                    System.out.print(current + " ");
                 }
             }
         }
