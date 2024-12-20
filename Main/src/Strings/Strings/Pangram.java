@@ -1,4 +1,4 @@
-import java.util.*;
+package Strings;
 
 public class Pangram {
     public static void main(String[] args) {

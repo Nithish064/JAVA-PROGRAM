@@ -6,7 +6,7 @@ public class Sumrange {
 
         int n = n2-n1 +1;
 
-        int sum = (n * (n1+n2))/2;
+        int sum = (n * (n1+n2))/2; // (3 * (10+12) / 2)
 
         System.out.println("Answer : " + sum);
     }
