@@ -1,4 +1,4 @@
-package Numbers;
+package TCS;
 import java.util.*;
 
 public class Temparature {

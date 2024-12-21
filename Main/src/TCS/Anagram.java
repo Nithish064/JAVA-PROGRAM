@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 import java.util.Arrays;
 
 public class Anagram 
