@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class pattern3 {
     public static void main(String args[])
     {

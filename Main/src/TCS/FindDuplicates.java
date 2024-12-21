@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class FindDuplicates {
     public static void main(String[] args) {
         // Example array

@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class InsertEnd {
     
     static void InsertEnd(int[] arr, int n, int value)

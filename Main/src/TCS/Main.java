@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {

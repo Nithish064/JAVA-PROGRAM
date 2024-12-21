@@ -1,4 +1,4 @@
-package Strings;
+package TCS;
 
 public class Pangram {
     public static void main(String[] args) {

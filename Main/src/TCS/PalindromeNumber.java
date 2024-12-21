@@ -1,4 +1,4 @@
-package Numbers;
+package TCS;
 public class PalindromeNumber {
     public static void main(String[] args) {
         int r,sum=0,temp;

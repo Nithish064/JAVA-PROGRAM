@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class MaxProductSubArray {
 
     static int MaxProduct(int[] arr)

@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class Countfrequency {
     
     public static void count(int[] a, int n)

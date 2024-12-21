@@ -1,4 +1,4 @@
-package Strings;
+package TCS;
 
 public class MaxOccurChar {
     public static void main(String[] args) {

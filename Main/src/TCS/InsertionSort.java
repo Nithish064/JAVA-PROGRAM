@@ -1,4 +1,4 @@
-package Sorting;
+package TCS;
 import java.util.*;
 
 public class InsertionSort {

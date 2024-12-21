@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class FindNonDuplicate {
 
     static void FindNonDuplicates(int[] arr)

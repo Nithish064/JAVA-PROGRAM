@@ -1,4 +1,4 @@
-package Numbers;
+package TCS;
 public class palindromerange {
     
     static boolean Palindrome(int n)

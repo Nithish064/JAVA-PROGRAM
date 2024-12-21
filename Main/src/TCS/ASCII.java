@@ -1,4 +1,4 @@
-package Strings;
+package TCS;
 
 public class ASCII {
     public static void main(String[] args) {

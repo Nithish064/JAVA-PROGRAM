@@ -1,4 +1,4 @@
-package Numbers;
+package TCS;
 public class MaxMinDigit {
     public static void main(String[] args) {
         String n = "1278";
