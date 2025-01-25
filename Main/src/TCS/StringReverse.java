@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 import java.util.Scanner;
 
 public class StringReverse {

@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class Sumrange {
     public static void main(String[] args) {
         int n1 = 10;

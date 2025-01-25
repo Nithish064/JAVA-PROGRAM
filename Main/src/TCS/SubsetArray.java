@@ -1,4 +1,4 @@
-package Array;
+package TCS;
 public class SubsetArray {
 
     static boolean IsSub(int[] arr1, int[] arr2, int m, int n)

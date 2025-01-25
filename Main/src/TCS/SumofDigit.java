@@ -1,4 +1,4 @@
-package Numbers;
+package TCS;
 import java.util.Scanner;
 
 public class SumofDigit {

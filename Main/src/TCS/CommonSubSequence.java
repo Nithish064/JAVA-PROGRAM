@@ -27,7 +27,7 @@ public class CommonSubSequence {
                 }
                 else
                 {
-                    dp[i][i] = Math.max(dp[i-1][j], dp[i][j-1]);
+                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
                 }
             }
         }

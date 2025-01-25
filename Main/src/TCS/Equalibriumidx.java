@@ -1,4 +1,4 @@
-package Numbers;
+package TCS;
 public class Equalibriumidx {
 //     Example 1:
 // Input: nums = [2,3,-1,8,4]

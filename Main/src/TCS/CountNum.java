@@ -1,4 +1,4 @@
-package Numbers;
+package TCS;
 public class CountNum {
     public static void main(String[] args) {
         int n = 233533;
