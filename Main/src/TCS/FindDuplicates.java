@@ -1,14 +1,10 @@
 package TCS;
-public class FindDuplicates {
-    public static void main(String[] args) {
-        // Example array
-        int[] numbers = {1, 2, 3, 4, 2, 5, 3, 6};
 
-        // Find duplicates
-        findDuplicates(numbers);
-    }
+// Class to handle duplicate finding logic
+class DuplicateFinder {
 
-    public static void findDuplicates(int[] arr) {
+    // Method to find duplicates in the array
+    public void findDuplicates(int[] arr) {
         System.out.print("Duplicate elements: ");
         boolean found = false;
 
@@ -25,5 +21,19 @@ public class FindDuplicates {
         if (!found) {
             System.out.print("No duplicates found.");
         }
+    }
+}
+
+// Main class to execute the program
+public class FindDuplicates {
+    public static void main(String[] args) {
+        // Example array
+        int[] numbers = {1, 2, 3, 4, 2, 5, 3, 6};
+
+        // Create an object of DuplicateFinder
+        DuplicateFinder finder = new DuplicateFinder();
+
+        // Call method to find duplicates in the array
+        finder.findDuplicates(numbers);
     }
 }
