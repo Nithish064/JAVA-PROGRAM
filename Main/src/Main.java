@@ -1,37 +1,28 @@
-class checker{
-    public boolean prime(int n) {
-        if(n <= 1)
+class Palindrome {
+    public void Palin(int n)
+    {
+        int rev = 0, rem, org = n;
+        while (n != 0)
         {
-            return false;
+            rem = n % 10;
+            rev = rev * 10 + rem;
+            n /= 10;
         }
-
-        for(int i=2;i<=n/2;++i)
+        if(rev == org)
         {
-            if(n % i == 0)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-}
-
-public class Main
-{
-    public static void main(String[] args) {
-        int n = 23;
-
-        checker checker = new checker();
-
-        boolean ans = checker.prime(n);
-
-        if(ans)
-        {
-            System.out.println("prime");
+            System.out.println("Palindrome");
         }
         else
         {
-            System.out.println("Not prime");
+            System.out.println("Not Palindrome");
         }
     }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int n = 12321;
+        Palindrome p = new Palindrome();
+        p.Palin(n);
+}
 }
