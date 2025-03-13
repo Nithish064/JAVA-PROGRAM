@@ -30,6 +30,6 @@ public class CountNum {
         DigitCounter counter = new DigitCounter();
         int count = counter.countOccurrences(num, digit);  // Call method to count occurrences
 
-        System.out.println(count);  // Output the result
+        System.out.println(digit + " occured in " + count + " times");  // Output the result
     }
 }
