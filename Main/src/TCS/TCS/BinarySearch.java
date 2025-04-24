@@ -40,12 +40,18 @@ class BinarySearcher {
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
-        int target = 22;
+        int target = -4;
 
         // Create an object of BinarySearcher
         BinarySearcher searcher = new BinarySearcher();
         int ans = searcher.binarySearch(arr, target);  // Call binarySearch method
 
-        System.out.println(ans);  // Output the result
+        if(ans == -1)
+        {
+            System.out.println("Element not found");
+        }
+        else{
+            System.out.println(ans);
+        }  // Output the result
     }
 }
