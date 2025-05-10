@@ -1,4 +1,11 @@
 package TCS;
+/*
+1
+12
+123
+1234
+ */
+
 public class pattern4 {
     public static void main(String args[])
     {

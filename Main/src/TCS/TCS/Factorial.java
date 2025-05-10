@@ -20,4 +20,3 @@ public class Factorial {
         System.out.println(num + " factorial is " + ans);
     }
 }
-
