@@ -1,4 +1,17 @@
 package Numbers;
+
+/*
+ * It checks if a number n is an abundant number.
+
+➥ A number is called abundant if the sum of its proper divisors (excluding itself) is greater than the number itself.
+
+Example:
+
+12 → divisors: 1, 2, 3, 4, 6 → sum = 16 → 16 > 12 → abundant → Yes
+
+21 → divisors: 1, 3, 7 → sum = 11 → 11 < 21 → not abundant → No
+ */
+
 public class Abudant {
 
     static int Abadant(int n)

@@ -8,7 +8,7 @@ public class Secondlargest {
         System.out.println("The given array is : ");
         for(int i = 0; i < arr.length; i++)
         {
-            System.out.println(arr[i] + "\t");
+            System.out.print(arr[i] + " ");
         }
         for(int i = 0; i < arr.length; i++)
         {
@@ -22,7 +22,7 @@ public class Secondlargest {
                 Secondlargest = arr[i];
             }
         }
-
+        System.out.println();
         System.out.println("The secondLargest number in the given array : " + Secondlargest);
         System.out.println("The largest number in the given array : " + largest);
     }
