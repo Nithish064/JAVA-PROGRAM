@@ -11,7 +11,6 @@ public class pattern4 {
     {
         int n = 4;
         pattern1(n);
-        
     }
 
     static void pattern1(int n)
