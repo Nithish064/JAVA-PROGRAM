@@ -1,5 +1,11 @@
 package Numbers;
 
+/*
+An Ugly Number is a number whose only prime factors are 2, 3, or 5.
+
+Examples: 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 30
+ */
+
 public class UglyNumber {
     static boolean isUgly(int n) {
         if (n <= 0) return false;

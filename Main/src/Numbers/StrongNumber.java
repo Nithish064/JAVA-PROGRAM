@@ -1,4 +1,12 @@
 package Numbers;
+
+/*
+A Strong Number is a number whose sum of the factorials of its digits equals the number itself.
+
+Example:
+145 →
+1! + 4! + 5! = 1 + 24 + 120 = 145 → ✅ Strong Number
+ */
 public class StrongNumber {
     static int Fact(int n)
     {
